@@ -9,6 +9,11 @@ Analysis process for the samsung galaxy human activity dataset
 * Human activity data has been downloaded, unzipped and stored in the current working directory with folder name "UCI HAR Dataset"
 * R programming language is used to create a tidy dataset and do analysis. Additionally, reshape2 library has been installed and loaded 
 
+## Dataset includes the following files
+* README.md - Details the assumptions, Pre-requisites and detailed analysis process
+* CodeBook.md - code book describing the tidy dataset generated from the raw dataset
+* run_analysis.R - R script which takes the raw dataset and generates tidy dataset.
+
 ## Detailed Analysis Process
 * First, all the features and activity labels are loaded independently which applies to both training and test datasets.
 * For each of Test and Training dataset, the following operations are performed

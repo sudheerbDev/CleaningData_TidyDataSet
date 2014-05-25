@@ -2,7 +2,7 @@
 
 ## This is the primary function to be invoked to create a tidy dataset from the raw samsung wearable data
 ## unzipped data should be saved under "UCI HAR Dataset" folder
-## Tidy Datasets will be saved in the .txt files with headers.
+## Tidy Datasets will be saved in the .txt file with headers.
 runAnalysis <- function()
 {
     # Perform step 1 & 3 - load, merge training and test datasets. 
@@ -18,8 +18,11 @@ runAnalysis <- function()
     ## step 5 - Get average for each variable group by activity and subjectid
     avgData <- createGroupedAvgValues(dataWithMeanOrStd)
     
-    ## save tidy datasets to local filesystem
-    saveDataToLocalFileSystem(dataWithMeanOrStd, avgData)
+    ## save tidy dataset to local filesystem
+    saveDataToLocalFileSystem(avgData)
+    
+    ## Return the tidy dataset as well.
+    avgData
 }
 
 ## Loads and merges training and test datasets
@@ -133,14 +136,9 @@ createGroupedAvgValues <- function(dataWithMeanOrStd)
     avgData
 }
 
-## saves the two dataframes to local filesystem
-saveDataToLocalFileSystem <- function(dataWithMeanOrStd, avgData)
+## saves the tidy dataset to local filesystem
+saveDataToLocalFileSystem <- function(avgData)
 {
-    ## save data to local file
-    write.table(dataWithMeanOrStd, file="dataWithMeanOrStd.txt")
-    
-    message("A tidy dataset with Mean Or Standard Deviation for all observations saved in datawithMeanOrStd.txt")
-    
     ## save data to local file
     write.table(avgData, file="avgWithMeanOrStdGroupByActivityAndSubject.txt")
     
