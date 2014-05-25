@@ -13,26 +13,26 @@ Tidy dataset contains the average for each of the mean and standard deviation va
 variables with pattern below denote the average for each of the signals 
 'xyz' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tbodyacc
-tgravityacc
-tbodyAccjerk
-tbodygyro
-tbodygyrojerk
-tbodyaccmag
-tgravityaccmag
-tbodyaccjerkmag
-tbodygyromag
-tbodygyrojerkmag
-fbodyacc
-fbodyaccjerk
-fbodygyro
-fbodyaccmag
-fbodyaccjerkmag
-fbodygyromag
-fbodygyrojerkmag
+-tbodyacc
+-tgravityacc
+-tbodyAccjerk
+-tbodygyro
+-tbodygyrojerk
+-tbodyaccmag
+-tgravityaccmag
+-tbodyaccjerkmag
+-tbodygyromag
+-tbodygyrojerkmag
+-fbodyacc
+-fbodyaccjerk
+-fbodygyro
+-fbodyaccmag
+-fbodyaccjerkmag
+-fbodygyromag
+-fbodygyrojerkmag
 
-aggregation performed for each of the variable are denoted with following pattern:
+Aggregation performed for each of the variable are denoted with following pattern:
 
-mean : Mean value
-std : Standard deviation value
+-mean : Mean value
+-std : Standard deviation value
 
